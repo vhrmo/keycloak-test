@@ -1,3 +1,8 @@
+### TODOs
+
+    "keycloak-js": "4.0.0-beta.2", // TODO - update to current version
+
+ 
 ### REACT development 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
