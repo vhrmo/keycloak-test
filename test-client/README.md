@@ -1,6 +1,5 @@
 ### TODOs
 
-    "keycloak-js": "4.0.0-beta.2", // TODO - update to current version
 
  
 ### REACT development 

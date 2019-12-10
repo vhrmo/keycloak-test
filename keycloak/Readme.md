@@ -1,11 +1,11 @@
 ### Build test Keycloak image
 
 The image is customized and includes following changes:
-- admin user defined
-- DB defined as H2
-- creates 'MyDemo' realm
-- creates Client
-- creates test users
+- admin user defined (admin/admin)
+- used in-memory H2 DB 
+- created 'MyDemo' realm
+- created Client
+- created test users
 
 `docker build --tag=keycloak-test .`
 
@@ -25,13 +25,14 @@ _Note: Creation of realms and clients is done after the server start-up - see `r
 
 http://127.0.0.1:9080/ 
 
+### Connect to running container
 
+`docker exec -it keycloak /bin/bash`
 
-###Setup realm and create user(s)
+###References
 
-Follow steps: https://scalac.io/user-authentication-keycloak-1
+Initial guide used to set up this project: https://scalac.io/user-authentication-keycloak-1
 
-or import `realm-my-react-client.json` and `users-export.json`
 
 
 
