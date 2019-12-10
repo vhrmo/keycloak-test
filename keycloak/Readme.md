@@ -11,7 +11,7 @@ The image is customized and includes following changes:
 
 _Note: Creation of realms and clients is done after the server start-up - see `run-after-server-start.sh` script._
 
-###Run Keycloak
+### Run Keycloak
 
 **Run customized test image** 
 
@@ -21,7 +21,7 @@ _Note: Creation of realms and clients is done after the server start-up - see `r
 
 `docker run --rm --name keycloak -p 9080:8080 -e KEYCLOAK_USER=admin -e KEYCLOAK_PASSWORD=admin -e DB_VENDOR=H2 jboss/keycloak:8.0.1`
 
-###Connect to web admin console
+### Connect to web admin console
 
 http://127.0.0.1:9080/ 
 
@@ -29,7 +29,7 @@ http://127.0.0.1:9080/
 
 `docker exec -it keycloak /bin/bash`
 
-###References
+### References
 
 Initial guide used to set up this project: https://scalac.io/user-authentication-keycloak-1
 
