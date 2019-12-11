@@ -1,6 +1,6 @@
 # keycloak-test
 
-Simple Keycloak docker image initialized with demo real and few test users + React based test client.
+Simple Keycloak docker image initialized with demo realm and few test users + React based test client.
 
 | Module        | Description|
 |:------  |:--------------------------------------|
