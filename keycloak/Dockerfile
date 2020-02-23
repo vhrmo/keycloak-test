@@ -7,7 +7,7 @@ ENV KEYCLOAK_USER=admin
 ENV KEYCLOAK_PASSWORD=admin
 ENV DB_VENDOR=H2
 
-ADD ./tools /opt/jboss/tools
+COPY --chown=jboss:root ./tools /opt/jboss/tools
 
 ENTRYPOINT [ "/opt/jboss/tools/my-entry-point.sh" ]
 CMD ["-b", "0.0.0.0"]
